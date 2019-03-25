@@ -3,5 +3,5 @@ COPY . sa-frontend/
 WORKDIR sa-frontend
 RUN npm install && npm run build
 
-FROM nginx as release
+FROM nginx AS release
 COPY --from=builder sa-frontend/build /usr/share/nginx/html/

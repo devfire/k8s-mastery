@@ -20,7 +20,7 @@ class App extends Component {
     };
 
     analyzeSentence() {
-        fetch('http://sa-web-app-clusterip:8080/sentiment', {
+        fetch('http://abcaaf67e898111e9bf2806595e5bdb2-1374378098.us-east-1.elb.amazonaws.com/sentiment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

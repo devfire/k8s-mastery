@@ -16,7 +16,7 @@ spec:
         app: sa-frontend                                  # 6
     spec:
       containers:
-        - image: devfire/sa-frontend
+        - image: devfire/sa-frontend:1559953240
           imagePullPolicy: Always                         # 7
           name: sa-frontend
           ports:
